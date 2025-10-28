@@ -14,7 +14,7 @@ from io import BytesIO
 
 # ---------------- CONFIG ----------------
 
-DSN="postgresql://postgres:YourPassword@localhost:5432/YourDatabaseName"
+DSN="postgresql://YourUsername:YourPassword@localhost:5432/YourDatabaseName"
 
 
 MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
@@ -83,3 +83,4 @@ async def query(q: str = Form(...), top_k: int = Form(3)):
     conn.close()
     results = [{"text_chunk": r[0], "similarity": float(r[1])} for r in rows]
     return {"query": q, "results": results}
+
