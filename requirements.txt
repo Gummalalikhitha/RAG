@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+psycopg[binary]          # or psycopg2-binary if you prefer
+pgvector                 # pgvector-python helper
+sentence-transformers
+pypdf
+python-multipart         # for form uploads
+numpy

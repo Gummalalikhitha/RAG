@@ -1,0 +1,52 @@
+/*static/style.css*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    width: 60%;
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #00bfff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+input, button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background: #00bfff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0099cc;
+}
+
+#response, #uploadStatus {
+    margin-top: 15px;
+    background: #222;
+    padding: 10px;
+    border-radius: 8px;
+}
